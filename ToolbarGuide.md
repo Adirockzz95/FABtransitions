@@ -88,4 +88,4 @@ final Button b = (Button)findViewById(R.id.button);
             }
         });
 ```
-Output:
+Output:[demo](https://github.com/Adirockzz95/FABtransitions/blob/master/demo%20(2).gif)
