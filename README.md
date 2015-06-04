@@ -1,5 +1,5 @@
 # FABtransitions
-Android Library to create Floating Action Button Animations.
+Android Library to create Floating Action Button Animations. 
 Check Google's [FAB documentation](http://www.google.com/design/spec/components/buttons-floating-action-button.html#buttons-floating-action-button-transitions) for further info.
 
 ![alt tag](https://github.com/Adirockzz95/FABtransitions/blob/master/demo (1).gif)
@@ -22,9 +22,8 @@ Check Google's [FAB documentation](http://www.google.com/design/spec/components/
 
 [asyl](https://github.com/asyl) for his [ArcAnimator](https://github.com/asyl/ArcAnimator);
 
-## NOTE
-this library is currently in **BETA**. Expect FC's.
- 
+####MinSDK support: 14
+
 LICENSE:
 ```
 The MIT License (MIT)

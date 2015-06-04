@@ -1,12 +1,8 @@
-package test.letstest;
+package adik.fabtransitions;
 
 import android.app.Activity;
 import android.graphics.Color;
 import android.graphics.drawable.Drawable;
-import android.os.Handler;
-import android.os.Looper;
-import android.os.Message;
-import android.util.Log;
 import android.view.Gravity;
 import android.view.View;
 import android.view.ViewGroup;
@@ -25,7 +21,7 @@ import io.codetail.animation.arcanimator.ArcAnimator;
 import io.codetail.animation.arcanimator.Side;
 
 /**
- * Created by aditockzz on 29-May-15.
+ * Created by adiK on 29-May-15.
  */
 public class RevealToolbar  {
 
@@ -93,12 +89,6 @@ public class RevealToolbar  {
                           fab.setVisibility(View.INVISIBLE);
                            fab.setEnabled(false);
                            revealAnimator.start();
-
-                           /*
-                           hand.postDelayed(hide,0);
-                          hand.postDelayed(invi,0);
-                           hand.postDelayed(rvl,0);
-                           */
 
                        }
 
