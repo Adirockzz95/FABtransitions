@@ -22,7 +22,7 @@ Check Google's [FAB documentation](http://www.google.com/design/spec/components/
 
 [asyl](https://github.com/asyl) for his [ArcAnimator](https://github.com/asyl/ArcAnimator);
 
-##MinSDK requirement: 14+
+**MinSDK requirement: 14**
 
 LICENSE:
 ```
