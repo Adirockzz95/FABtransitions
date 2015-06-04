@@ -16,6 +16,7 @@ Check Google's [FAB documentation](http://www.google.com/design/spec/components/
 
 #Usage
 * [Toolbar animation](https://github.com/Adirockzz95/FABtransitions/blob/master/ToolbarGuide.md)
+* [material sheet animation](https://github.com/Adirockzz95/FABtransitions/blob/master/materialsheetDemo.md);
 
 ##Thanks
 [ozodrukh](https://github.com/ozodrukh) for his [CircularReveal](https://github.com/ozodrukh/CircularReveal) library.
