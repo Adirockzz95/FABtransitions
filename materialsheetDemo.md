@@ -1,4 +1,4 @@
- ###FAB to material sheet
+ # FAB to material sheet
 
   Create XML layout
 ```xml
@@ -48,7 +48,7 @@ making background activity dim & disabled.
 
 ![Example ](https://github.com/Adirockzz95/FABtransitions/blob/master/art/sample1.jpg?raw=true)
 
- ### **Material sheet to FAB**
+ ## Material sheet to FAB
 
   To reverse the animation you have to set setOnTouchListener on its parent view.
   In other words, touch event outside the Reveal view will act as a trigger.
