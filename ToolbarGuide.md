@@ -23,7 +23,7 @@ Code:
 ```java
 final boolean reveal_sts = false;  //animation status flag
 //Initialize revealview
-View myView = findViewById(R.id.reveal) 
+View myView = findViewById(R.id.reveal); 
 
 // create Floating Action Button
 final FloatingActionButton  Fab; RevealToolbar.Fab(this,getResources().getDrawable(your_drawable),Color.parseColor("#03A9F4"),72);
@@ -33,7 +33,7 @@ Fab  = RevealToolbar.Create();
 Fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) 		             		  
-                reveal_st=  RevealToolbar.Reveal(myView); // pass reveal view
+                reveal_sts =  RevealToolbar.Reveal(myView); // pass reveal view
                 //this will start reveal animation 
             }
         });
@@ -80,8 +80,8 @@ final Button b = (Button)findViewById(R.id.button);
             public void onClick(View view) {
                //check whether Myview is revealed or not
                 if(reveal_sts){
-                    //call hideReveal method
-                    RevealToolbar.hideReveal(myView); 
+                    //call HideReveal method
+                    RevealToolbar.HideReveal(myView); 
                     
                     reveal_sts = false; //set flag to false 
                 }
