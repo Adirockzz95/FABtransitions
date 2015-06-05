@@ -23,16 +23,17 @@ Code:
 ```java
 final boolean reveal_sts = false;  //animation status flag
 //Initialize revealview
-View myView = findViewById(R.id.reveal); 
+final View myView = findViewById(R.id.reveal); 
 
 // create Floating Action Button
-final FloatingActionButton  Fab; RevealToolbar.Fab(this,getResources().getDrawable(your_drawable),Color.parseColor("#03A9F4"),72);
+final FloatingActionButton  Fab;
+RevealToolbar.Fab(this,getResources().getDrawable(your_drawable),Color.parseColor("#03A9F4"),72);
 Fab  = RevealToolbar.Create();
 
 //Set onClickListener on FAB to start reveal animation.
 Fab.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) 		             		  
+            public void onClick(View view){ 		             		  
                 reveal_sts =  RevealToolbar.Reveal(myView); // pass reveal view
                 //this will start reveal animation 
             }
