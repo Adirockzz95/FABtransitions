@@ -3,7 +3,7 @@
   Create XML layout
 ```xml
    <!-- set parent id (compulsorily) -->
-<test.library.MorphFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<adik.fabtransitions.MorphFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/hide"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
@@ -18,6 +18,7 @@
 
           <!--Add your views here-->
       </FrameLayout>
+   </adik.fabtransitions.MorphFrameLayout>   
 ```
  In your activity:
 ```java
