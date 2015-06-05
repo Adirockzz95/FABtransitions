@@ -16,8 +16,7 @@ import io.codetail.animation.SupportAnimator;
 import io.codetail.animation.ViewAnimationUtils;
 import io.codetail.animation.arcanimator.ArcAnimator;
 import io.codetail.animation.arcanimator.Side;
-import test.library.FloatingActionButton;
-import test.library.R;
+import adik.fabtransitions.FloatingActionButton;
 
 
 public class MaterialSheet {
