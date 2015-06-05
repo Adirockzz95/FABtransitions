@@ -26,8 +26,8 @@ final boolean reveal_sts = false;  //animation status flag
 View myView = findViewById(R.id.reveal) 
 
 // create Floating Action Button
-final FloatingActionButton  Fab; RevealToolbar.fab(this,getResources().getDrawable(your_drawable),Color.parseColor("#03A9F4"),72);
-fab  = RevealToolbar.create();
+final FloatingActionButton  Fab; RevealToolbar.Fab(this,getResources().getDrawable(your_drawable),Color.parseColor("#03A9F4"),72);
+Fab  = RevealToolbar.Create();
 
 //Set onClickListener on FAB to start reveal animation.
 Fab.setOnClickListener(new View.OnClickListener() {
