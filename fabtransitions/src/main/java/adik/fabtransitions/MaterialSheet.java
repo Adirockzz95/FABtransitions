@@ -16,6 +16,8 @@ import io.codetail.animation.SupportAnimator;
 import io.codetail.animation.ViewAnimationUtils;
 import io.codetail.animation.arcanimator.ArcAnimator;
 import io.codetail.animation.arcanimator.Side;
+import test.library.FloatingActionButton;
+import test.library.R;
 
 
 public class MaterialSheet {
@@ -32,11 +34,13 @@ public class MaterialSheet {
     private ArcAnimator revealArc;
     private   FrameLayout frame;
     private View overlay;
-
+    private int changeX=200,changeY=200;
+   private int[] Margins = {0,450,30,30};
+   
     public  MaterialSheet(final View view){
         FrameLayout.LayoutParams params = (FrameLayout.LayoutParams)view.getLayoutParams();
-        params.gravity = (Gravity.END);
-        params.setMargins(0, 550, 30, 30);
+        params.gravity = (Gravity.RIGHT);
+        params.setMargins(Margins[0],Margins[1],Margins[2],Margins[3]);
         view.setLayoutParams(params);
         view.getViewTreeObserver().addOnGlobalLayoutListener(new ViewTreeObserver.OnGlobalLayoutListener() {
             @Override
@@ -77,14 +81,15 @@ public class MaterialSheet {
         int id =   ((View)view.getParent()).getId();
         frame = (FrameLayout)activity.findViewById(id);
         LayoutInflater inflater = (LayoutInflater)activity.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        overlay  = inflater.inflate(R.layout.dim,frame,false);
+        overlay  = inflater.inflate(R.layout.footer,frame,false);
 
         frame.addView(overlay,0);
+        frame.setClickable(false);
         view.setVisibility(View.VISIBLE);
-        revealAnimator = ViewAnimationUtils.createCircularReveal(view, (int)revealX, (int)revealY+245, 0, revealRadius);
+        revealAnimator = ViewAnimationUtils.createCircularReveal(view, (int)revealX, (int)revealY+changeY, 0, revealRadius);
         revealAnimator.setDuration(210);
         revealAnimator.setInterpolator(new AccelerateDecelerateInterpolator());
-        revealArc = ArcAnimator.createArcAnimator(fab,revealX,revealY+245, +10, Side.LEFT);
+        revealArc = ArcAnimator.createArcAnimator(fab,revealX,revealY+changeY, +45, Side.LEFT);
         revealArc.setDuration(120);
         revealArc.setInterpolator(new AccelerateDecelerateInterpolator());
         revealArc.start();
@@ -121,10 +126,11 @@ public class MaterialSheet {
     public boolean HideReveal( final View Rootview) {
 
                 frame.removeView(overlay);
-                revealAnimator = ViewAnimationUtils.createCircularReveal(Rootview, (int) revealX, (int) revealY + 245, revealRadius, 0);
-                revealAnimator.setDuration(210);
+                frame.setClickable(true);
+                revealAnimator = ViewAnimationUtils.createCircularReveal(Rootview, (int) revealX,(int)revealY+changeY, revealRadius, 0);
+                revealAnimator.setDuration(121);
                 revealAnimator.setInterpolator(new AccelerateDecelerateInterpolator());
-                revealArc = ArcAnimator.createArcAnimator(fab, fabX, fabY,-10, Side.LEFT);
+                revealArc = ArcAnimator.createArcAnimator(fab, fabX, fabY,-45, Side.LEFT);
                 revealArc.setDuration(120);
                 revealArc.setInterpolator(new AccelerateDecelerateInterpolator());
                 revealAnimator.start();
@@ -158,5 +164,8 @@ public class MaterialSheet {
 
     }
 
-
+    public void setMargins(int left,int top,int right,int bottom){
+     Margins[0]= left;Margins[1] = top;Margins[1] = right;Margins[2] = bottom;
+    }
+    
 }
