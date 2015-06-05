@@ -18,7 +18,7 @@ import io.codetail.animation.arcanimator.ArcAnimator;
 import io.codetail.animation.arcanimator.Side;
 
 
-public class RevealCardview {
+public class MaterialSheet {
 
     private Activity activity;
     private  Drawable drawable;
@@ -33,7 +33,7 @@ public class RevealCardview {
     private   FrameLayout frame;
     private View overlay;
 
-    public  RevealCardview(final View view){
+    public  MaterialSheet(final View view){
         FrameLayout.LayoutParams params = (FrameLayout.LayoutParams)view.getLayoutParams();
         params.gravity = (Gravity.END);
         params.setMargins(0, 550, 30, 30);

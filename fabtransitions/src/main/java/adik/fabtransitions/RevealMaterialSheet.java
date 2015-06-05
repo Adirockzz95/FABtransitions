@@ -19,7 +19,7 @@ import io.codetail.animation.arcanimator.Side;
 
 
 public class RevealMaterialSheet {
-
+    
     static protected Activity activity;
     static   protected Drawable drawable;
     static protected   int color = Color.WHITE;

@@ -10,6 +10,7 @@ Check Google's [FAB documentation](http://www.google.com/design/spec/components/
 * This library has dependencies on ozodrukh's [CircularReveal](https://github.com/ozodrukh/CircularReveal) and 
   asyl's [ArcArnimator](https://github.com/asyl/ArcAnimator).
 * Add fabtransition folder into your project as a dependency.
+* Add CircularReveal in fabtransition's gradle file as project dependency.
 
 **sample**
 [apk](https://github.com/Adirockzz95/FABtransitions/blob/master/test.letstest.apk)
