@@ -27,19 +27,27 @@
         //Initialize revealview
         final View myView = findViewById(R.id.reveal);
 
-        //create instance of materialsheet
-        final MaterialSheet cardview = new MaterialSheet(myView);
-
+       //create instance of MaterialSheet
+    final MaterialSheet materialSheet = new MaterialSheet(myView);// REVEAL VIEW
+                       
        //create and floating action button
         FloatingActionButton fab;
-       cardview.Fab(this,getResources().getDrawable(your_drawable),Color.parseColor("#FFFF00"),72); 
-fab = cardview.Create();  
+       materialSheet.Fab(this,getResources().getDrawable(your_drawable),Color.parseColor("#FFFF00"),72); 
+       fab = materialSheet.Create();  
+       
+  ```
+  * **Now you can use other FAB libraries. To do that create an instance of your FAB button and pass it to MaterialSheet constructor.**
+  ```
+final MaterialSheet materialsheet = new MaterialSheet( Activity act ,final View view,final View button);
+  ```
+  Then attach Event listener
+  ```
 
 //set onClicklistener on FAB to start reveal animation
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                revl_sts = cardview.Reveal(myView); //pass reveal view
+                reveal_st = materialSheet.Reveal(myView);  //pass reveal view
 
             }
         });
@@ -65,15 +73,45 @@ making background activity dim & disabled.
             @Override
             public boolean onTouch(View view, MotionEvent motionEvent) {
                 //check if view is revealed or not
-                if(revl_sts){
-                    cardview.HideReveal(myView);  //hide vieew
+                if(materialsheet.isRevealed()){
+                    materialsheet.HideReveal(myView);  //hide vieew
                     revl_sts = false;    //set flag to false
                 }
                 return true;
             }
         });
       
-  ```    
+  ```
+   ## Public Constructors
+   * **MaterialSheet(View RevealView)**
+   * **MaterialSheet(View RevealView, View FAB)**
+   
+   ## Public Methods
+   * **Reveal(View)**  
+     Returns true after succesfull execution.
+   * **HideReveal(View)**  
+Returns true after succesfull execution.
+ * **showFab(View v)**  
+   Show fab with animation.
+  
+  * **hideFab(View v)**  
+   Hide fab with animation
+  * **isRevealed()**  
+   Returns true if View is revealed else false.
+  * **isFabHidden()**  
+   Returns true if fab is hidden
+  * **setChangeX(int x)**  
+Set X coordinate for reveal animation.
+* **setChangeY(int y)**  
+Set Y coordinate for reveal animation
+
+**Default values of (x,y) coordinates are Center(x,y+200) of View.**
+
+* **setMargins(int left,int top, int right, int bottom)**  
+**Default values are (0,0,450,30,30)**
+     
+
+   
   Output:
   
   ![ ](https://github.com/Adirockzz95/FABtransitions/blob/master/art/sample2.gif?raw=true);
