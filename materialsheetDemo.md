@@ -83,9 +83,8 @@ making background activity dim & disabled.
       
   ```
   
-  ##Public Constructors
-  
-  
+##Public Constructors
+ 
    * **MaterialSheet(View RevealView)**
    * **MaterialSheet(View RevealView, View FAB)**
    
