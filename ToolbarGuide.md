@@ -83,7 +83,7 @@ final Button b = (Button)findViewById(R.id.button);
             @Override
             public void onClick(View view) {
                //check whether Myview is revealed or not
-                if(!toolbar.isRevealed()){
+                if(toolbar.isRevealed()){
                     //call HideReveal method
                    reveal_st =toolbar.Reveal(myView);
                     reveal_sts = false; //set flag to false 
