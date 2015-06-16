@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<adik.fabtransitions.MorphFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:id="@+id/hide"
+
+    android:layout_height="match_parent">
+
+    <ListView
+
+        android:descendantFocusability="blocksDescendants"
+        android:id="@+id/OuterList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        </ListView>
+
+    <FrameLayout
+        android:background="@drawable/card"
+        android:focusable="true"
+        android:clickable="true"
+        android:id="@+id/reveal_card"
+        android:visibility="invisible"
+
+        android:layout_width="250dp"
+        android:layout_height="300dp">
+
+       <ListView
+           android:focusable="true"
+           android:clickable="true"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:id="@+id/InnerList">
+           </ListView>
+        </FrameLayout>
+
+
+
+
+</adik.fabtransitions.MorphFrameLayout>

@@ -1,0 +1,25 @@
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:focusable="true"
+    >
+
+  <Button
+      android:text="Morph to toolbar"
+      android:layout_gravity="center_horizontal"
+      android:layout_width="match_parent"
+      android:layout_height="70dp"
+      android:id="@+id/grid"/>
+
+    <Button
+        android:text="Morph to material sheet"
+        android:id="@+id/msheet"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="70dp" />
+
+</LinearLayout>
+
