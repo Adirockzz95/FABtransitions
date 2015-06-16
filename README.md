@@ -1,4 +1,4 @@
-# FABtransitions
+# FABtransitions 
 Android Library to create Floating Action Button Animations. 
 Check Google's [FAB documentation](http://www.google.com/design/spec/components/buttons-floating-action-button.html#buttons-floating-action-button-transitions) for further info.
 
@@ -6,25 +6,27 @@ Check Google's [FAB documentation](http://www.google.com/design/spec/components/
 
 [YouTube video](https://www.youtube.com/watch?v=ycVOPEdlCVw)
 
+#Requirements
+* The Library requires Android SDK version 14 (ICS) and higher.
+    
+
 #Setup:
-* This library has dependencies on ozodrukh's [CircularReveal](https://github.com/ozodrukh/CircularReveal) and 
-  asyl's [ArcArnimator](https://github.com/asyl/ArcAnimator).
-* Add fabtransition folder into your project as a dependency.
-* Add CircularReveal in fabtransition's gradle file as project dependency.
+* Add [AAR](https://github.com/Adirockzz95/FABtransitions/blob/master/sample%20app/fabtransition/fabtransition.aar) into your project as a dependency.
+* Add NineOldAndroids as a dependency
 
-**sample**
-[apk](https://github.com/Adirockzz95/FABtransitions/blob/master/test.letstest.apk)
+      
 
-#Usage
-* [Toolbar animation](https://github.com/Adirockzz95/FABtransitions/blob/master/ToolbarGuide.md)
-* [material sheet animation](https://github.com/Adirockzz95/FABtransitions/blob/master/materialsheetDemo.md);
+#Usage (Updated)
+* [Toolbar animation](https://github.com/Adirockzz95/FABtransitions/blob/master/ToolbarGuide.md)  
 
-##Thanks
+* [material sheet animation](https://github.com/Adirockzz95/FABtransitions/blob/master/materialsheetDemo.md)
+
+
+
+## Thanks
 [ozodrukh](https://github.com/ozodrukh) for his [CircularReveal](https://github.com/ozodrukh/CircularReveal) library.
 
-[asyl](https://github.com/asyl) for his [ArcAnimator](https://github.com/asyl/ArcAnimator);
-
-####MinSDK support: 14
+[asyl](https://github.com/asyl) for his [ArcAnimator](https://github.com/asyl/ArcAnimator)
 
 LICENSE:
 ```
