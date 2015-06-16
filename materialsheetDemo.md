@@ -38,7 +38,7 @@
   ```
   * **Now you can use other FAB libraries. To do that create an instance of your FAB button and pass it to MaterialSheet constructor.**
   ```
-final MaterialSheet materialsheet = new MaterialSheet( Activity act ,final View view,final View button);
+final MaterialSheet materialsheet = new MaterialSheet( Activity activity ,final View RevealView,final View FAB);
   ```
   Then attach Event listener
   ```
