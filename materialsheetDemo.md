@@ -93,14 +93,13 @@ making background activity dim & disabled.
 Returns true after succesfull execution.
  * **showFab(View v)**  
    Show fab with animation.
-  
-  * **hideFab(View v)**  
-   Hide fab with animation
-  * **isRevealed()**  
-   Returns true if View is revealed else false.
-  * **isFabHidden()**  
-   Returns true if fab is hidden
-  * **setChangeX(int x)**  
+ * **hideFab(View v)**  
+  Hide fab with animation
+* **isRevealed()**  
+  Returns true if View is revealed else false.
+* **isFabHidden()**  
+  Returns true if fab is hidden
+* **setChangeX(int x)**  
 Set X coordinate for reveal animation.
 * **setChangeY(int y)**  
 Set Y coordinate for reveal animation
