@@ -27,14 +27,17 @@ final View myView = findViewById(R.id.reveal);
 
 // create Floating Action Button
 final FloatingActionButton  Fab;
-RevealToolbar.Fab(this,getResources().getDrawable(your_drawable),Color.parseColor("#03A9F4"),72);
-Fab  = RevealToolbar.Create();
 
+final RevealToolbar toolbar = new RevealToolbar(myView);
+
+ toolbar.Fab(this, getResources().getDrawable(R.drawable.ic_edit_white_24dp), Color.parseColor("#03A9F4"), 72);
+        Fab = toolbar.Create();
+                          
 //Set onClickListener on FAB to start reveal animation.
 Fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view){ 		             		  
-                reveal_sts =  RevealToolbar.Reveal(myView); // pass reveal view
+              reveal_st= toolbar.Reveal(myView);// pass reveal view
                 //this will start reveal animation 
             }
         });
@@ -72,7 +75,7 @@ Fab.setOnClickListener(new View.OnClickListener() {
 ```
 Code:
 ```java
-//get reference
+//get a reference
 final Button b = (Button)findViewById(R.id.button);
 
 //Set onClickListener on Button to start hide animation.
@@ -80,10 +83,9 @@ final Button b = (Button)findViewById(R.id.button);
             @Override
             public void onClick(View view) {
                //check whether Myview is revealed or not
-                if(reveal_sts){
+                if(!toolbar.isRevealed()){
                     //call HideReveal method
-                    RevealToolbar.HideReveal(myView); 
-                    
+                   reveal_st =toolbar.Reveal(myView);
                     reveal_sts = false; //set flag to false 
                 }
             }
