@@ -2,21 +2,21 @@
 Android Library to create Floating Action Button Animations. 
 Check Google's [FAB documentation](http://www.google.com/design/spec/components/buttons-floating-action-button.html#buttons-floating-action-button-transitions) for further info.
 
-![alt tag](https://github.com/Adirockzz95/FABtransitions/blob/master/demo (1).gif)
+![](https://github.com/Adirockzz95/FABtransitions/blob/master/demo(1).gif)
 
 [YouTube video](https://www.youtube.com/watch?v=ycVOPEdlCVw)
 
-#Requirements
+## Requirements
 * The Library requires Android SDK version 14 (ICS) and higher.
     
 
-#Setup:
+## Setup:
 * Add [AAR](https://github.com/Adirockzz95/FABtransitions/blob/master/sample%20app/fabtransition/fabtransition.aar) into your project as a dependency.
 * Add NineOldAndroids as a dependency
 
       
 
-#Usage (Updated)
+## Usage (Updated)
 * [Toolbar animation](https://github.com/Adirockzz95/FABtransitions/blob/master/ToolbarGuide.md)  
 
 * [material sheet animation](https://github.com/Adirockzz95/FABtransitions/blob/master/materialsheetDemo.md)
